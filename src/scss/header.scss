@@ -1,0 +1,115 @@
+.header {
+    position: fixed;
+    z-index: 10;
+    background-color: #a1a483;
+    padding: toRem(0) toRem(60) toRem(0) toRem(55);
+    height: toRem(90);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @media (max-width: toEm(975)) {
+        padding: toRem(0) toRem(32) toRem(0) toRem(32);
+    }
+    &__logo {
+        @media (max-width: $mobile) {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            transition: all 0.3s;
+        }
+    }
+    &__image {
+        @media (max-width: $mobile) {
+            width: 85%;
+            height: 85%;
+        }
+    }
+
+    &__menu {
+        @media (min-width: $mobile) {
+            flex: 1 1 100%;
+        }
+    }
+
+    &__button {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background: url("@img/header/shopping-cart.png") 0 0 no-repeat;
+            width: 17.49px;
+            height: 15.56px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+    }
+
+    &__button-img {
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.3s;
+        }
+        @media (max-width: $mobile) {
+        }
+    }
+}
+.menu {
+    &__icon {
+    }
+
+    &__body {
+        @media (max-width: $mobile) {
+            background-color: #a1a483;
+            padding: toRem(100) toRem(0) toRem(100) toRem(0);
+        }
+    }
+
+    &__list {
+        @media (min-width: $mobile) {
+            display: flex;
+            justify-content: end;
+        }
+        text-align: center;
+    }
+
+    &__item {
+        margin: toRem(0) toRem(30) toRem(0) toRem(0);
+        &:last-child {
+            margin: toRem(0) toRem(55) toRem(0) toRem(0);
+        }
+        @media (max-width: toEm(975)) {
+            margin: toRem(0) toRem(10) toRem(0) toRem(0);
+            &:last-child {
+                margin: 0px 10px 0px 0px;
+            }
+        }
+        @media (max-width: $mobile) {
+            margin: toRem(0) toRem(0) toRem(40) toRem(0);
+            &:last-child {
+                margin: toRem(0) toRem(0) toRem(0) toRem(0);
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 17px;
+        font-size: toRem(17);
+        color: #ffffff;
+        &:hover {
+            transition: all 0.3s;
+            color: #c8c8c8;
+        }
+        @media (max-width: $mobile) {
+            font-size: toRem(32);
+        }
+    }
+}
+
+.icon-menu {
+}

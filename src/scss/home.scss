@@ -1,3 +1,218 @@
 //====================================================================================================
+// section-two
+
+.section-two {
+    padding: toRem(130) toRem(0) toRem(0) toRem(0);
+    @media (max-width: $mobile) {
+        padding: toRem(109) toRem(24) toRem(0) toRem(24);
+    }
+    &__row {
+        display: flex;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_left-- {
+            flex: 1 1 50%;
+            padding: 10% 4.5% 9.2% 6.5%;
+            background-color: #eeeeee;
+            @media (max-width: $mobile) {
+                flex: 1 1 100%;
+            }
+        }
+
+        &_right-- {
+            flex: 0 1 50%;
+
+            @media (max-width: $mobile) {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    &__text-box {
+        padding: 0px 4.5% 0% 0%;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: toRem(14);
+        line-height: 19px;
+        text-align: left;
+        letter-spacing: 1.3px;
+        margin: toRem(0) toRem(0) toRem(14) toRem(0);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: toRem(70);
+        line-height: 110%;
+        margin: toRem(0) toRem(0) toRem(22) toRem(0);
+
+        @media (max-width: toEm(1115)) {
+            font-size: toRem(45);
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: 150%;
+
+        margin: toRem(0) toRem(0) toRem(34) toRem(0);
+    }
+
+    &__btn {
+        @media (max-width: $mobile) {
+            margin: toRem(0) toRem(0) toRem(36) toRem(0);
+        }
+    }
+
+    &__column-image {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            top: 24.5%;
+            left: 50%;
+            background: url("@img/section-two/1.png") 0 0 no-repeat;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            top: 56%;
+            left: 68.9%;
+            background: url("@img/section-two/1.png") 0 0 no-repeat;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.btn {
+    font-weight: 500;
+    font-size: toRem(17);
+    line-height: 150%;
+    letter-spacing: 4px;
+    color: #ffffff;
+    background-color: #0a0a0a;
+    padding: 12px 45px 12px 45px;
+    border-radius: 25px;
+    &:hover {
+        transition: all 0.3s;
+        color: #a1a483;
+    }
+}
+
+// section-three
+
+.section-three {
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: toRem(145);
+        font-weight: 500;
+        font-size: toRem(20);
+        line-height: 26px;
+        text-align: center;
+        &:hover {
+            transition: all 0.3s;
+            color: #a1a483;
+        }
+    }
+}
+
+// section-four
+
+.section-four {
+    margin: toRem(0) toRem(0) toRem(100) toRem(0);
+
+    &__row {
+        display: flex;
+        margin: 0px -7.5px 0px -7.5px;
+        @media (max-width: toEm(990)) {
+            flex-wrap: wrap;
+            padding: toRem(0) toRem(24) toRem(0) toRem(24);
+        }
+    }
+
+    &__column {
+        position: relative;
+        padding: toRem(120) toRem(0) toRem(0) toRem(0);
+        flex: 0 1 33.333%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 7.5px 0px 7.5px;
+        @media (max-width: toEm(990)) {
+            margin: toRem(0) toRem(0) toRem(20) toRem(0);
+            flex: 1 1 100%;
+        }
+        &_one {
+            background-color: #e1e4c2;
+        }
+        &_two {
+            background-color: #dceeee;
+        }
+        &_three {
+            background-color: #f3efe1;
+            @media (max-width: toEm(990)) {
+                margin: 0px 0px 0px 0px;
+            }
+        }
+    }
+
+    &__subtitle {
+        &::before {
+            content: "NEW COLLECTION";
+            position: absolute;
+            text-align: center;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            font-weight: 500;
+            font-size: toRem(14);
+            line-height: 19px;
+            letter-spacing: 1.35px;
+            display: inline-block;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: toRem(40);
+        line-height: 120%;
+        margin: toRem(0) toRem(0) toRem(15) toRem(0);
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    &__btn {
+        font-size: toRem(16);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        padding: 12px 45px 12px 45px;
+        padding: toRem(12) toRem(30) toRem(12) toRem(30);
+    }
+}
+.btn {
+}
 
 //====================================================================================================

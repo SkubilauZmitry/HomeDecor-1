@@ -13,6 +13,7 @@
 			overflow: auto;
 			padding: toRem(50) toRem(15) toRem(30) toRem(15);
 			transition: left 0.3s;
+			z-index: 2;
 			&::before {
 				content: "";
 				position: fixed;
@@ -67,7 +68,7 @@
 			position: absolute;
 			width: 100%;
 			height: toRem(2);
-			background-color: #000;
+			background-color: #ffffff;
 		}
 		&::before {
 			top: 0;

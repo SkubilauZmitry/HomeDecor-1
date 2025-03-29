@@ -1,15 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <!-- section-two -->
+        <section class="section-two">
+          <div class="section-two__container">
+            <div class="section-two__row">
+              <div class="section-two__column section-two__column_left--">
+                <div class="section-two__text-box">
+                  <h4 class="section-two__subtitle">NEW COLLECTION</h4>
+                  <h1 class="section-two__title">The Beauty Of Design</h1>
+                  <p class="section-two__text">
+                    Both functional and decorative, which feels artisan-made but
+                    has a contemporary look.
+                  </p>
+                  <a href="#" class="section-two__btn btn">EXPLORE</a>
+                </div>
+              </div>
+              <div class="section-two__column section-two__column_right--">
+                <div class="section-two__column-image ibg">
+                  <img src="@img/section-two/1.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section-three -->
+        <section class="section-three">
+          <div class="section-three__container">
+            <a href="" class="section-three__link"
+              >Place seasonal & targeted discount benefits here</a
+            >
+          </div>
+        </section>
+        <!-- section-four -->
+        <section class="section-four">
+          <div class="section-four__container">
+            <div class="section-four__row">
+              <div class="section-four__column section-four__column_one">
+                <h4 class="section-four__subtitle"></h4>
+                <h3 class="section-four__title">
+                  Decor & <br />
+                  Wellness
+                </h3>
+                <a href="#" class="section-four__btn btn">Show more</a>
+                <img src="@img/section-four/1.png" alt="Image" />
+              </div>
+              <div class="section-four__column section-four__column_two">
+                <h3 class="section-four__title">Kitchen & <br />Dining</h3>
+                <a href="#" class="section-four__btn btn">Show more</a>
+                <img src="@img/section-four/2.png" alt="Image" />
+              </div>
+              <div class="section-four__column section-four__column_three">
+                <h3 class="section-four__title">Shop <br />Furniture</h3>
+                <a href="#" class="section-four__btn btn">Show more</a>
+                <img src="@img/section-four/3.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>
