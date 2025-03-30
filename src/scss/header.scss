@@ -18,7 +18,7 @@
 
         &:hover {
             transform: scale(1.02);
-            transition: all 0.3s;
+            transition: all 0.2s;
         }
     }
     &__image {
@@ -102,14 +102,11 @@
         font-size: toRem(17);
         color: #ffffff;
         &:hover {
-            transition: all 0.3s;
+            transition: all 0.2s;
             color: #c8c8c8;
         }
         @media (max-width: $mobile) {
             font-size: toRem(32);
         }
     }
-}
-
-.icon-menu {
 }
