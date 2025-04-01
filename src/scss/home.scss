@@ -1,4 +1,19 @@
 //====================================================================================================
+.btn {
+    font-weight: 500;
+    font-size: toRem(17);
+    line-height: 150%;
+    letter-spacing: 4px;
+    color: #ffffff;
+    background-color: #0a0a0a;
+    padding: 12px 45px 12px 45px;
+    border-radius: 25px;
+    &:hover {
+        transition: all 0.3s;
+        color: #a1a483;
+    }
+}
+
 // section-two
 
 .section-two {
@@ -84,6 +99,9 @@
             top: 24.5%;
             left: 50%;
             background: url("@img/section-two/1.png") 0 0 no-repeat;
+            @media (max-width: $mobile) {
+                background: url("@img/section-two/2.png") 0 0 no-repeat;
+            }
         }
         &::after {
             content: "";
@@ -93,26 +111,15 @@
             top: 56%;
             left: 68.9%;
             background: url("@img/section-two/1.png") 0 0 no-repeat;
+            @media (max-width: $mobile) {
+                background: url("@img/section-two/2.png") 0 0 no-repeat;
+            }
         }
         & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-    }
-}
-.btn {
-    font-weight: 500;
-    font-size: toRem(17);
-    line-height: 150%;
-    letter-spacing: 4px;
-    color: #ffffff;
-    background-color: #0a0a0a;
-    padding: 12px 45px 12px 45px;
-    border-radius: 25px;
-    &:hover {
-        transition: all 0.3s;
-        color: #a1a483;
     }
 }
 
@@ -275,91 +282,205 @@
     }
 }
 
-// .section-five {
-//     margin: 0px 0px 100px 0px;
-//     &__container {
-//     }
+.section-six {
+    position: relative;
+    padding: 92px 20px 15.7% 20px;
+    @media (max-width: $mobile) {
+        padding: 35px 20px 15.7% 20px;
+    }
 
-//     &__row {
-//         display: flex;
-//     }
+    &__container {
+        max-width: toRem(886);
+    }
+    & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 10;
+        font-weight: 500;
+        font-size: toRem(14);
+        line-height: 19px;
+        align-items: center;
+        letter-spacing: 1.35px;
+        color: #ffffff;
+        margin: toRem(0) toRem(0) toRem(15) toRem(0);
+    }
 
-//     &__column {
-//         flex: 0 1 20%;
-//     }
+    &__title {
+        position: relative;
+        z-index: 11;
+        font-weight: 600;
+        font-size: toRem(40);
+        line-height: 120%;
+        color: #ffffff;
+        margin: toRem(0) toRem(0) toRem(33) toRem(0);
+    }
 
-//     &__image-one {
-//         position: relative;
-//         padding: 0px 0px 25% 0px;
-//         width: 24.21%;
-//         @media (max-width: $mobile) {
-//             min-width: 60px;
-//             min-height: 60px;
-//         }
-//         & img {
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             top: 0;
-//             left: 0;
-//         }
-//     }
-//     &__image-two {
-//         position: relative;
-//         padding: 0px 0px 25% 0px;
-//         width: 15%;
-//         min-width: 60px;
-//         min-height: 60px;
-//         & img {
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             top: 0;
-//             left: 0;
-//         }
-//     }
-//     &__image-three {
-//         position: relative;
-//         padding: 0px 0px 25% 0px;
-//         width: 15%;
-//         min-width: 60px;
-//         min-height: 60px;
-//         & img {
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             top: 0;
-//             left: 0;
-//         }
-//     }
-//     &__image-four {
-//         position: relative;
-//         padding: 0px 0px 25% 0px;
-//         width: 15%;
-//         min-width: 60px;
-//         min-height: 60px;
-//         & img {
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             top: 0;
-//             left: 0;
-//         }
-//     }
-//     &__image-five {
-//         position: relative;
-//         padding: 0px 0px 25% 0px;
-//         width: 15%;
-//         min-width: 60px;
-//         min-height: 60px;
-//         & img {
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             top: 0;
-//             left: 0;
-//         }
-//     }
-// }
+    &__button {
+        position: relative;
+        z-index: 12;
+    }
+
+    &__btn {
+        padding: 12px 35px 12px 35px;
+    }
+}
+
+// section-seven
+
+.section-seven {
+    padding: toRem(93) toRem(0) toRem(85) toRem(0);
+    @media (max-width: $mobile) {
+        padding: toRem(78) toRem(0) toRem(75) toRem(0);
+    }
+
+    &__row {
+        display: flex;
+        margin: 0px 0px 0px 0px;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+        flex: 0 1 33.333%;
+        margin: 0px 0px 0px 0px;
+        @media (max-width: $mobile) {
+            flex: 1 1 100%;
+            padding: toRem(0) toRem(10) toRem(0) toRem(10);
+            margin: toRem(0) toRem(0) toRem(75) toRem(0);
+            &:last-child {
+                margin: 0px 0px 0px 0px;
+            }
+        }
+    }
+
+    &__image {
+        text-align: center;
+        margin: toRem(0) toRem(0) toRem(15) toRem(0);
+        position: relative;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        text-align: center;
+        margin: toRem(0) toRem(0) toRem(15) toRem(0);
+    }
+
+    &__text {
+        font-size: 17px;
+        line-height: 150%;
+        letter-spacing: 0.25px;
+        text-align: center;
+        padding: toRem(0) toRem(50) toRem(0) toRem(50);
+        @media (max-width: $tablet) {
+            padding: toRem(0) toRem(20) toRem(0) toRem(20);
+        }
+    }
+}
+// section-eight
+
+.section-eight {
+    margin: 0px 0px 100px 0px;
+    padding: toRem(0) toRem(54) toRem(0) toRem(54);
+
+    &__title {
+        font-weight: 600;
+        font-size: toRem(40);
+        line-height: 120%;
+        text-align: center;
+        margin: toRem(0) toRem(0) toRem(50) toRem(0);
+        @media (max-width: $mobile) {
+            margin: toRem(0) toRem(0) toRem(33) toRem(0);
+        }
+    }
+
+    &__image {
+        position: relative;
+        padding: 0px 0px 46.647% 0px;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 80;
+            background: url("@img/section-eight/1.svg") 0 0 no-repeat;
+            width: 32px;
+            height: 32px;
+            top: 63%;
+            left: 27%;
+            @media (max-width: $mobile) {
+                background: url("@img/section-eight/2.svg") 0 0 no-repeat;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 80;
+            background: url("@img/section-eight/1.svg") 0 0 no-repeat;
+            width: 32px;
+            height: 32px;
+            top: 51%;
+            left: 82%;
+            @media (max-width: $mobile) {
+                background: url("@img/section-eight/2.svg") 0 0 no-repeat;
+            }
+        }
+
+        & img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__row {
+        margin: toRem(25) toRem(0) toRem(0) toRem(0);
+        @media (min-width: $mobile) {
+            display: flex;
+            justify-content: space-between;
+            margin: toRem(50) toRem(0) toRem(0) toRem(0);
+        }
+    }
+
+    &__column {
+        &_text-box {
+            flex: 0 1 40%;
+        }
+        &_btn {
+            display: flex;
+            align-items: end;
+        }
+    }
+
+    &__column-title {
+        font-weight: 600;
+        font-size: toRem(22);
+        line-height: 28px;
+        margin: toRem(0) toRem(0) toRem(12) toRem(0);
+    }
+
+    &__column-text {
+        font-size: toRem(17);
+        line-height: 150%;
+        @media (max-width: $mobile) {
+            margin: toRem(0) toRem(0) toRem(25) toRem(0);
+        }
+    }
+
+    &__column-button {
+        padding: 12px 35px 12px 35px;
+    }
+}
 
 //====================================================================================================

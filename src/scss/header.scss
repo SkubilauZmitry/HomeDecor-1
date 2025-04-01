@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     background-color: #a1a483;
     padding: toRem(0) toRem(60) toRem(0) toRem(55);
     height: toRem(90);
@@ -59,9 +59,6 @@
     }
 }
 .menu {
-    &__icon {
-    }
-
     &__body {
         @media (max-width: $mobile) {
             background-color: #a1a483;
