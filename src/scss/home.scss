@@ -339,6 +339,9 @@
     @media (max-width: $mobile) {
         padding: toRem(78) toRem(0) toRem(75) toRem(0);
     }
+    @media (min-width: $mobileSmall) {
+        padding: toRem(51) toRem(0) toRem(47) toRem(0);
+    }
 
     &__row {
         display: flex;
@@ -357,6 +360,9 @@
             margin: toRem(0) toRem(0) toRem(75) toRem(0);
             &:last-child {
                 margin: 0px 0px 0px 0px;
+            }
+            @media (max-width: $mobileSmall) {
+                margin: toRem(0) toRem(0) toRem(53) toRem(0);
             }
         }
     }
@@ -487,7 +493,7 @@
 .section-nine {
     padding: toRem(80) toRem(12.5) toRem(80) toRem(12.5);
     @media (max-width: $mobile) {
-        padding: toRem(75) toRem(12.5) toRem(59) toRem(0);
+        padding: toRem(75) toRem(12.5) toRem(59) toRem(12.5);
     }
     &__title {
         font-weight: 600;
